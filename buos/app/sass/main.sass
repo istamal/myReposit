@@ -1,0 +1,231 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+
+@import "media" // Always at the end
+
+.nav 
+	box-shadow: 0 0 3px 2px #aaa
+
+.logo 
+	margin: 0
+	padding: 0
+	font-size: 70%;
+	padding: 10px 
+	color: #2e469c
+	line-height: 18px
+	border-right: 1px solid #ccc
+
+	img 
+		margin: 0px 15px 0px 26px
+		float: left
+		width: 55px
+		height: 55px
+
+.phone 
+	line-height: 80px
+
+	a 
+		color: #000;
+		font-size: 20px
+		font-family: Gilroy-Extrabold
+
+		img 
+			margin-right: 16px
+
+.version 
+	line-height: 75px
+
+	a 
+		color: #000
+		font-size: 13px
+
+		img 
+			margin-right: 25px
+
+.study 
+	background: #2e469c
+	line-height: 75px
+	text-transform: uppercase
+
+	a 
+		color: #fff	
+		font-size: 12px
+
+		img 
+			margin-right: 20px
+
+.search 
+	line-height: 80px
+
+.sidebar 
+	height: 100%
+	background: #2e469c
+	position: absolute
+	top: 81px
+	left: 0
+	z-index: 1
+
+	ul 
+		margin: 60px 0 0 10px 
+		padding: 0
+		list-style-type: none
+
+		li 
+			margin: 10px 0
+
+			a 
+				color: #fff
+				display: block
+				padding: 10px 0
+				font-size: 15px
+
+				img 
+					padding: 0 25px
+					float: left
+
+.slider 
+	height: auto
+	padding: 0
+	background: #aaa
+
+	.carousel-present 
+		margin: 0
+		padding: 0 
+
+		.owl-item 
+
+.owl-nav 
+	font-size: 30px
+	line-height: 30px
+	position: absolute
+	right: 20px
+	top: 30%
+
+	.owl-prev span, .owl-next span  
+		background: #fff
+		display: inline-block 
+		border: 2px solid #aaa
+		border-right-color: #777
+		border-bottom-color: #555
+		width: 50px
+		outline: none
+		height: 50px
+		line-height: 40px
+		text-align: center
+
+.owl-dots 
+	position: absolute
+	bottom: 10px
+	left: 45%
+	.owl-dot
+		margin-left: 10px
+
+		span 
+			width: 10px
+			height: 10px
+			display: inline-block
+			background: #fff
+			border-radius: 50%
+
+	.owl-dot.active 
+
+		span 
+			width: 10px
+			height: 10px
+			display: inline-block
+			border: 1px solid blue
+			border-radius: 50%
+			background: blue
+
+.promo 
+	position: absolute
+	left: 138px
+	top: 63px
+
+	img 
+		width: 1546px
+		height: 590px
+
+	span 
+		background: #fff
+		padding: 10px
+		font-family: Gilroy-Light
+
+	h1 
+		margin-top: 45px
+		font-size: 38px
+		font-family: Gilroy-Extrabold
+		color: #000
+
+	p 
+		margin-top: 20px
+		font-size: 18px
+		font-family: Gilroy-Light
+		color: #000
+		font-weight: 400px
+
+	h3, input 
+		display: inline-block
+		margin-top: 70px
+		
+	h3
+		font-family: Gilroy-Extrabold
+		font-size: 35px
+
+	input[type="button"] 
+		background: #d90a01
+		padding: 20px 45px
+		border: none
+		color: #fff
+		margin-left: 75px
+
+.content 
+	padding: 70px
+	height: 400px
+
+	h2 
+		font-family: Gilroy-Extrabold
+		margin-bottom: 25px
+
+	.owl-nav 
+		font-size: 30px
+		right: 0
+		top: -75px
